@@ -135,7 +135,7 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 ## 📧 Contacto
 
 - GitHub: [@CodeWithBotina](https://github.com/CodeWithBotina)
-- Email: tu@email.com
+- Email: DiegoAlejandroBotina15@gmail.com
 
 ---
 Hecho con ❤️ por CodeWithBotina
