@@ -65,7 +65,7 @@ class Game:
         """Load game icon"""
         try:
             base_path = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-            icon_path = os.path.join(base_path, "assets", "icono.ico")
+            icon_path = os.path.join(base_path, "assets/images", "icono.ico")
             if os.path.exists(icon_path):
                 pygame.display.set_icon(pygame.image.load(icon_path))
             else:
