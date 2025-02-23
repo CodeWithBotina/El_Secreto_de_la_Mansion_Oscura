@@ -21,11 +21,11 @@ En una noche tormentosa, el empresario Alexander fue encontrado muerto en su man
 
 ## 🔧 Requisitos del Sistema
 
-- Python 3.8 o superior
+- Python 3.12.x
 - Pip (gestor de paquetes de Python)
 - 500MB de espacio libre en disco
 - Tarjeta gráfica compatible con Pygame
-- Sistema operativo: Windows/Linux/MacOS
+- Sistema operativo: Windows 10/11
 
 ## ⚙️ Instalación
 
@@ -35,36 +35,30 @@ git clone https://github.com/CodeWithBotina/El_Secreto_de_la_Mansion_Oscura.git
 cd El_Secreto_de_la_Mansion_Oscura
 ```
 
-2. **Crear un entorno virtual** (recomendado)
+2. **Crear un entorno virtual** (obligatorio)
 ```bash
-# Windows
 python -m venv venv
 venv\Scripts\activate
-
-# Linux/MacOS
-python3 -m venv venv
-source venv/bin/activate
 ```
 
-3. **Instalar dependencias**
+3. **Instalar dependencias en orden específico**
 ```bash
-pip install -r requirements.txt
+pip install --upgrade pip
+pip install importlib_resources>=5.0.0
+pip install pygame==2.6.1
+pip install z3-solver==4.12.3.0
 ```
 
 ## 🎯 Ejecución
 
 1. **Activar el entorno virtual** (si no está activado)
 ```bash
-# Windows
 venv\Scripts\activate
-
-# Linux/MacOS
-source venv/bin/activate
 ```
 
 2. **Ejecutar el juego**
 ```bash
-python src/main.py
+python main.py
 ```
 
 ## 🎮 Controles
@@ -101,14 +95,23 @@ El_Secreto_de_la_Mansion_Oscura/
 
 ## 🔍 Resolución de Problemas
 
-### Error: No se encuentra Pygame
+### Error: Problemas con Z3-Solver
+Si encuentras errores relacionados con Z3-Solver, prueba estos pasos:
 ```bash
-pip install pygame
+pip uninstall z3-solver
+pip install importlib_resources>=5.0.0
+pip install z3-solver==4.12.3.0
 ```
 
-### Error: No se encuentra Z3-Solver
+### Error: No se encuentra importlib_resources
 ```bash
-pip install z3-solver
+pip install importlib_resources>=5.0.0
+```
+
+### Error: Problemas con Pygame
+```bash
+pip uninstall pygame
+pip install pygame==2.6.1
 ```
 
 ### Error: Problemas con el audio
@@ -129,8 +132,8 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 ## 🎨 Créditos
 
 - Desarrollo: CodeWithBotina
-- Música: [Derechos Recervados a Quien Corresponda]
-- Sprites y gráficos: [Derechos Recervados a Quien Corresponda]
+- Música: [Derechos Reservados a Quien Corresponda]
+- Sprites y gráficos: [Derechos Reservados a Quien Corresponda]
 
 ## 📧 Contacto
 

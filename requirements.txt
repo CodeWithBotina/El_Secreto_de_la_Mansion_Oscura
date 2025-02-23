@@ -1,15 +1,3 @@
-# Dependencias principales
-pygame>=2.6.1
-z3-solver>=4.12.2
-
-# Dependencias para desarrollo
-black>=23.0.0  # Formateador de código
-pylint>=3.0.0  # Análisis estático de código
-pytest>=7.4.0  # Testing
-
-# Dependencias opcionales pero recomendadas
-python-dotenv>=1.0.0  # Para variables de entorno
-typing-extensions>=4.8.0  # Para anotaciones de tipo mejoradas
-
-# Especificar versión de Python
-# Requires-Python: >=3.8
+pygame==2.6.1
+z3-solver==4.12.3.0
+importlib_resources>=5.0.0
