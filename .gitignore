@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.pyo
+*.pyd
+*.py,cover
+*.cache
+*.pyi
+
+# Virtual Environment
+venv/
+env/
+ENV/
+venv*/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.history/
+
+# Windows
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# Excluir todo en build y dist
+*build/
+*dist/
+*.egg
+*.whl
+
+# Ignorar documentación generada
+docs/_build/
+
+# Archivos de configuración local
+.env
+local_settings.py
+settings.ini
+
+# Archivos de logs
+*.log
+logs/
+
+# Archivos de bases de datos y caché
+*.sqlite3
+*.db
+*.sql
+
+# Herramientas de desarrollo
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+
+# Archivos de sistemas operativos
+.DS_Store
+Icon?
